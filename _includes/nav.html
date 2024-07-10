@@ -1,7 +1,22 @@
 <nav class="navbar">
     <ul class="nav-list">
         {% for link in site.nav_links %}
-        <li class="nav-item"><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+            {% if link.children != null and link.children.size > 0 %}
+                <li class="nav-item dropdown">
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    <ul class="dropdown-menu">
+                        {% for item in link.children %}
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </nav>

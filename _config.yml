@@ -29,3 +29,8 @@ nav_links:
     url: "/about/"
   - title: "Contact"
     url: "/contact/"
+  - title: "软考"
+    url: "/ruanKao/"
+    children:
+      - title: "第一章节"
+        url: "/ruanKao/index1/"
