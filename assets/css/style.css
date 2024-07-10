@@ -12,9 +12,30 @@ p {
 }
 
 .navbar {
-    background-color: #00d1b2;
+    background-color: #333;
+    overflow: hidden;
 }
 
-.navbar-item, .navbar-item:hover {
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
 }
