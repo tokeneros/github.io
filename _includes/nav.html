@@ -12,4 +12,7 @@
             {% endfor %}
         </ul>
     </div>
+    {% for link in site.nav_links %}
+    <p>{{ link.url }}</p>
+    {% endfor %}
 </nav>
