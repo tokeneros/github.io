@@ -1,12 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            {% for link in site.nav_links %}
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+<nav class="navbar has-shadow">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <span class="navbar-burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                {% for link in site.nav_links %}
+                <a class="navbar-item" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </nav>

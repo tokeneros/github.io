@@ -10,3 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin-bottom: 1rem;
 }
+
+.navbar {
+    background-color: #00d1b2;
+}
+
+.navbar-item, .navbar-item:hover {
+    color: white;
+}
