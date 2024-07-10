@@ -26,6 +26,6 @@ nav_links:
   - title: "Home"
     url: "/"
   - title: "About"
-    url: "/pages/about/"
+    url: "/about/"
   - title: "Contact"
-    url: "/pages/contact/"
+    url: "/contact/"
