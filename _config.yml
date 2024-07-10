@@ -1,3 +1,21 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# 网站基本信息
+title: "杂货铺" # 网站标题
+subtitle: "上班可真累啊" # 网站副标题
+description: "记录一些杂乱的东西." # 网站描述，用于SEO
+author: "徐文韬" # 网站作者
+logo: "./common/png/sunShine.png" # 网站logo的路径
+
+# 文章相关配置
+timezone: "Beijing" # 时区设置
+markdown: kramdown # Markdown解析器，kramdown是默认值
+highlighter: rouge # 代码高亮引擎
+lsi: false # 是否使用语言隔离索引
+excerpt_separator: "\n\n" # 文章摘要分隔符
+incremental: false # 是否增量生成
+
+# 导航菜单
+navigation:
+  - title: 首页
+    url: /
+  - title: 软考
+    url: /ruanKao/
